@@ -55,7 +55,7 @@ angular.module('openfb', [])
         function login(fbScope) {
 
             if (!fbAppId) {
-                return error({error: 'Facebook App Id not set.'});
+                return Error({error: 'Facebook App Id not set.'});
             }
 
             var loginWindow;
